@@ -1,4 +1,7 @@
 spring:
+  messages:
+    basename: i18n/messages
+    fallback-to-system-locale: false
   application:
     name: hr_manage
   datasource:

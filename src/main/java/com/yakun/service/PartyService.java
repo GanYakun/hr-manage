@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public interface PartyService {
     Party getById(String partyId);
     List<Party> getAllParty();
