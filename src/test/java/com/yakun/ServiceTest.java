@@ -3,7 +3,7 @@ package com.yakun;
 import com.yakun.dao.UserLoginDao;
 import com.yakun.domain.Party;
 import com.yakun.domain.UserLogin;
-import com.yakun.dto.UserRegisterReqDTO;
+import com.yakun.dto.userdto.UserRegisterReqDTO;
 import com.yakun.service.PartyService;
 
 import com.yakun.service.UserService;

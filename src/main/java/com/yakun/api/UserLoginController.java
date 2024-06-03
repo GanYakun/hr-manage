@@ -1,6 +1,6 @@
 package com.yakun.api;
 
-import com.yakun.dto.UserRegisterReqDTO;
+import com.yakun.dto.userdto.UserRegisterReqDTO;
 import com.yakun.service.UserService;
 import com.yakun.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.yakun.dto;
+package com.yakun.dto.userdto;
 
 import lombok.Data;
 

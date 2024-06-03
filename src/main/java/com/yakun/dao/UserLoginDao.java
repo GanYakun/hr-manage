@@ -1,7 +1,7 @@
 package com.yakun.dao;
 
 import com.yakun.domain.UserLogin;
-import com.yakun.dto.UserRegisterReqDTO;
+import com.yakun.dto.userdto.UserRegisterReqDTO;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
