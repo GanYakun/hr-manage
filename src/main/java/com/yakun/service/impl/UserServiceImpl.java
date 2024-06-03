@@ -3,7 +3,7 @@ package com.yakun.service.impl;
 import com.yakun.dao.UserLoginDao;
 import com.yakun.dto.UserRegisterReqDTO;
 import com.yakun.service.UserService;
-import com.yakun.util.CommonMessageCode;
+import com.yakun.util.MessageUtil.CommonMessageCode;
 import com.yakun.util.JsonResult;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;

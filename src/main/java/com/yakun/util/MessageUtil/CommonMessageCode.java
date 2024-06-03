@@ -1,13 +1,12 @@
-package com.yakun.util;
+package com.yakun.util.MessageUtil;
 
-import com.yakun.util.i18n.LocaleUtil;
+import com.yakun.util.i18nUtil.LocaleUtil;
 
 import lombok.Getter;
 
 /**
  * 公共错误码
  */
-
 public enum CommonMessageCode {
     //响应成功
     SUCCESS("200","i18n.status.success"),
@@ -31,6 +30,7 @@ public enum CommonMessageCode {
     LOGIN_OUT("00000002", "i18n.status.logout.success"),
     //需要更新密码
     UPDATE_PWD("200","i18n.status.password.update");
+
 
     /**
      * 提示

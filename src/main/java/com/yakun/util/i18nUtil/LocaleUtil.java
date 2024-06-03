@@ -1,4 +1,4 @@
-package com.yakun.util.i18n;
+package com.yakun.util.i18nUtil;
 
 import io.micrometer.common.lang.Nullable;
 import org.springframework.beans.BeansException;
