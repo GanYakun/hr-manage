@@ -15,22 +15,29 @@ public enum CommonMessageCode {
     //响应失败
     FAIL("COMAPP999", "i18n.status.fail"),
     //登录失败
-    LOGIN_FAILURE("00000001", "i18n.status.login.fail"),
+    LOGIN_FAILURE("3040", "i18n.status.login.fail"),
+    //已登录
+    LOGIN_Token("3041", "i18n.status.login.logged"),
+    //已注册
+    USER_EXISTS("3042","i18n.status.register.repeat"),
+    //密码错误
+    WRONG_PW("3043", "i18n.status.password.wrong"),
     //文件为空
     FILE_IS_EMPTY("00000002", "i18n.status.file.empty"),
     //登录成功
     LOGIN_SUCCESS("200", "i18n.status.login.success"),
-    //已登录
-    LOGIN_Token("00000000", "i18n.status.login.logged"),
-    //已注册
-    USER_EXISTS("00000001","i18n.status.register.repeat"),
+    //未注册
+    USER_NOT_EXISTS("401","i18n.status.register.unregistered"),
     //注册成功
     REGISTER_SUCCESS("200","i18n.status.register.success"),
     //退出登录
     LOGIN_OUT("00000002", "i18n.status.logout.success"),
     //需要更新密码
-    UPDATE_PWD("200","i18n.status.password.update");
-
+    UPDATE_PWD("200","i18n.status.password.update"),
+    //token验证失败，重新登陆
+    TOKEN_FAILED("401", "i18n.token.validate.failed"),
+    //没有token，重新登陆
+    NO_TOKEN("401", "i18n.token.lost.login");
 
     /**
      * 提示

@@ -1,4 +1,4 @@
-package com.yakun.dto.partydto;
+package com.yakun.dto.PartyDTO;
 
 import lombok.Data;
 

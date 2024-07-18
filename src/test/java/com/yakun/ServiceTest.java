@@ -3,10 +3,12 @@ package com.yakun;
 import com.yakun.dao.UserLoginDao;
 import com.yakun.domain.Party;
 import com.yakun.domain.UserLogin;
-import com.yakun.dto.userdto.UserRegisterReqDTO;
+import com.yakun.dto.UserDTO.UserLoginReqDTO;
+import com.yakun.dto.UserDTO.UserRegisterReqDTO;
 import com.yakun.service.PartyService;
 
 import com.yakun.service.UserService;
+import com.yakun.util.JsonResult;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -30,7 +32,8 @@ public class ServiceTest {
 
     @Test
     public void testFindAllService() {
-        partyService.getAllParty();
+        List<Party> allParty = partyService.getAllParty();
+        System.out.println(allParty);
     }
 
     @Test
@@ -43,5 +46,14 @@ public class ServiceTest {
         for (UserLogin userLogin : all) {
             System.out.println(userLogin);
         }
+    }
+
+    @Test
+    public void testUserLoginService() {
+        UserLoginReqDTO userLoginReqDTO = new UserLoginReqDTO();
+        userLoginReqDTO.setUsername("GanYakun");
+        userLoginReqDTO.setPassword("abc123");
+        JsonResult jsonResult = userService.loginService(userLoginReqDTO);
+        System.out.println(jsonResult);
     }
 }

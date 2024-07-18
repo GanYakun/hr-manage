@@ -25,7 +25,7 @@ class HrManageApplicationTests {
 	@Test
 	void getAllPartyTest() {
 		List<Party> partyList = partyDao.getAllParty();
-		System.out.println(partyList);
+		System.out.println("Party" + partyList);
 	}
 
 	@Test

@@ -1,4 +1,4 @@
-package com.yakun.service.impl;
+package com.yakun.service.Impl;
 
 import com.yakun.dao.PartyDao;
 import com.yakun.domain.Party;

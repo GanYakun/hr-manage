@@ -1,10 +1,11 @@
-package com.yakun.util.i18nUtil;
+package com.yakun.config.i18nConfug;
 
 import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.LocaleResolver;
@@ -15,7 +16,7 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 
 import java.util.Locale;
 
-
+@Component
 @AutoConfigureBefore(WebMvcAutoConfiguration.class)
 public class LocaleConfig {
 
@@ -30,8 +31,7 @@ public class LocaleConfig {
     public LocaleResolver localeResolver() {
         AcceptHeaderLocaleResolver localeResolver = new AcceptHeaderLocaleResolver();
         // 设置默认区域：简体中文
-        final Locale locale= new Locale("zh", "CN");
-        localeResolver.setDefaultLocale(locale);
+        localeResolver.setDefaultLocale(Locale.SIMPLIFIED_CHINESE);
         return localeResolver;
     }
 
@@ -45,7 +45,7 @@ public class LocaleConfig {
             public void addInterceptors(InterceptorRegistry registry) {
                 LocaleChangeInterceptor localeInterceptor = new LocaleChangeInterceptor();
                 localeInterceptor.setParamName("lang");
-                registry.addInterceptor(localeInterceptor);
+                    registry.addInterceptor(localeInterceptor);
             }
         };
     }
